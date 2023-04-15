@@ -1,0 +1,69 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  p,
+  div,
+  ul,
+  li,
+  a,
+  table,
+  tr,
+  td {
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+
+  section > .container {
+    padding: 20px 40px;
+  }
+
+  /* navbar */
+  .name,
+  .avatar {
+    display: none;
+  }
+
+  #nav-bar .container a {
+    width: 20%;
+  }
+
+  #nav-bar .container > a:nth-of-type(2) {
+    border-right: none;
+  }
+  /* about */
+  #about .container > div {
+    padding: 25px;
+  }
+  #about .container div h1 {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  #job-info > .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  .flexbox {
+    flex-direction: column;
+  }
+
+  .flexbox img {
+    padding: 0 1rem;
+  }
+  .flexbox h4 {
+    white-space: wrap;
+  }
+  .certi-grid-item img {
+    width: 100%;
+    height: fit-content;
+  }
+  .project-grid {
+    column-gap: 10px;
+    padding-bottom: 10px;
+  }
+  .project-name {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
