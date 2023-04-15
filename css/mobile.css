@@ -8,7 +8,7 @@
   tr,
   td {
     line-height: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /* container */
@@ -98,6 +98,6 @@
     display: none;
   }
   .contact-list i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }

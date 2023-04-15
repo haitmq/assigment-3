@@ -13,7 +13,9 @@ li,
 a,
 table,
 tr,
-td {
+td,
+input,
+button {
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
   line-height: 1.7rem;
@@ -463,4 +465,137 @@ section > .container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* tao class hidden */
+.hidden {
+  display: none;
+}
+/* style form */
+.form-model1 > * {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-model1 input {
+  height: 1.8rem;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-model1 input:focus {
+  box-shadow: 0 0 3px 2px #219fdc;
+}
+
+.form-model1 span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.form-model1 button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #333;
+  background-color: #219fdc;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.form-model1 button:hover {
+  cursor: pointer;
+}
+.form-model1 button:active {
+  background-color: #083a53;
+  color: #fff;
+}
+.invalid {
+  color: #ec4c4c;
+}
+
+.info-form {
+  position: relative;
+}
+.emailExample {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+.emailExample::before {
+  content: '\25B2';
+  display: block;
+  color: #333;
+  font-size: 1.4rem;
+  position: absolute;
+  top: -15px;
+}
+
+/* add view more and view less */
+.viewLess,
+.viewMore {
+  grid-column: 1 / span 2;
+  padding: 5px 50px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.viewLess:hover,
+.viewMore:hover {
+  cursor: pointer;
+}
+.grid-item {
+  position: relative;
+}
+
+.viewMore {
+  background: linear-gradient(0, #82c3e4, #fff);
+  position: absolute;
+  bottom: 15px;
+}
+
+.viewLess {
+  background: linear-gradient(180deg, #82c3e4, #fff);
+}
+
+.viewLess p,
+.viewMore p {
+  text-align: center;
+  position: relative;
+}
+
+.viewLess::before {
+  content: '\25B2';
+  color: #333;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 15px;
+}
+
+.viewMore::before {
+  content: '\25BC';
+  color: #333;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 15px;
+}
+
+/* them khoang trong duoi tieu de de di chuot vao */
+.grid-item h1 {
+  position: relative;
+}
+
+.grid-item h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.grid-item-title:hover .viewMore {
+  display: block;
 }

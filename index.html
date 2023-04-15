@@ -53,34 +53,46 @@
         </div>
         <div id="personal-info">
           <h1 class="section-title">Thông tin cá nhân</h1>
-          <ul class="mt-40 info">
-            <!-- dùng thẻ strong hoặc thẻ span để chỉnh font-weight -->
-            <li><span>Giới tính</span> : Nam</li>
-            <li><span>Ngày sinh</span> : 05/08/1997</li>
-            <li><span>Điện thoại</span> : (+84) 329420606</li>
-            <li><span>Email</span> : haitmqfx22585@funix.edu.vn</li>
-            <li><span>Địa chỉ</span> : Tây Lộc, T.P. Huế, Thừa Thiên Huế</li>
-            <li><span>Website</span> : https://abc.tech</li>
-          </ul>
-          <!-- tạo list hiển thị contract icon -->
-          <ul class="contact-icon">
-            <li>
-              <a href="#"><i class="icon-twitter icon-color-edit"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/htmq13/"
-                ><i class="icon-facebook icon-color-edit"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"><i class="icon-gplus icon-color-edit"></i></a>
-            </li>
-            <li>
-              <a href="www.linkedin.com/in/haitmq97"
-                ><i class="icon-linkedin icon-color-edit"></i
-              ></a>
-            </li>
-          </ul>
+          <div class="info-container hidden">
+            <ul class="mt-40 info">
+              <!-- dùng thẻ strong hoặc thẻ span để chỉnh font-weight -->
+              <li><span>Giới tính</span> : Nam</li>
+              <li><span>Ngày sinh</span> : 05/08/1997</li>
+              <li><span>Điện thoại</span> : (+84) 329420606</li>
+              <li><span>Email</span> : haitmqfx22585@funix.edu.vn</li>
+              <li><span>Địa chỉ</span> : Tây Lộc, T.P. Huế, Thừa Thiên Huế</li>
+              <li><span>Website</span> : https://abc.tech</li>
+            </ul>
+            <!-- tạo list hiển thị contract icon -->
+            <ul class="contact-icon">
+              <li>
+                <a href="#"><i class="icon-twitter icon-color-edit"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/htmq13/"
+                  ><i class="icon-facebook icon-color-edit"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-gplus icon-color-edit"></i></a>
+              </li>
+              <li>
+                <a href="www.linkedin.com/in/haitmq97"
+                  ><i class="icon-linkedin icon-color-edit"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="info-form">
+            <form class="form-model1" action="" autocomplete="off">
+              <input id="email-user" type="text" name="email" />
+              <span class="message">Hãy nhập email để tiếp tục</span>
+              <button id="btn-email-check" class="submit-btn" type="button">
+                Submit
+              </button>
+            </form>
+            <div class="emailExample hidden">Ex: johnconner9@proton.me</div>
+          </div>
         </div>
       </div>
     </section>
@@ -88,10 +100,13 @@
     <section id="job-info">
       <div class="container">
         <div style="margin-top: 20px" class="grid-item experience">
-          <h1>Kinh nghiệm</h1>
+          <div class="grid-item-title">
+            <h1>Kinh nghiệm</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
+          </div>
           <i class="ic-toolbox job-info-icon"></i>
           <!-- tạo lớp để css phần tử giả (index trước list) -->
-          <ul class="whitespace-li desc-index">
+          <ul class="whitespace-li desc-index show-item hidden">
             <li>
               <h3>Full Stack Developer - Công ty Y</h3>
               <p>
@@ -113,12 +128,16 @@
               </p>
               <p>- Sử dụng các công cụ: Figma, Carva, PTS.</p>
             </li>
+            <div class="viewLess"><p>View less</p></div>
           </ul>
         </div>
         <div style="margin-top: 20px" class="grid-item education">
-          <h1>Học vấn</h1>
+          <div class="grid-item-title">
+            <h1>Học vấn</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
+          </div>
           <i class="ic-pencil job-info-icon"></i>
-          <ul class="whitespace-li desc-index">
+          <ul class="whitespace-li desc-index show-item hidden">
             <li>
               <h3>FUNiX</h3>
               <p>
@@ -139,12 +158,16 @@
               <p>- Chuyên nghành: Sư phạm Toán.</p>
               <p>- GPA: 2.88/4</p>
             </li>
+            <div class="viewLess"><p>View less</p></div>
           </ul>
         </div>
         <div style="margin-top: 20px" class="grid-item activity">
-          <h1>Hoạt động</h1>
+          <div class="grid-item-title">
+            <h1>Hoạt động</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
+          </div>
           <i class="ic-toolbox job-info-icon"></i>
-          <ul class="whitespace-li desc-index">
+          <ul class="whitespace-li desc-index show-item hidden">
             <li>
               <h3>FPT Edu Hackathon 2019</h3>
               <p><em>03/2019 - 05/2019</em></p>
@@ -164,22 +187,30 @@
                 - Tham gia tổ chức nội dung các sự kiện, hoạt động câu lạc bộ.
               </p>
             </li>
+            <div class="viewLess"><p>View less</p></div>
           </ul>
         </div>
         <div style="margin-top: 20px" class="grid-item hobby">
-          <h1>Sở thích</h1>
-          <i class="ic-telescope job-info-icon"></i>
-          <div class="hobby-items">
-            <div><i class="ic-megaphone"></i> Âm nhạc</div>
-            <div><i class="ic-hotairballoon"></i> Du lịch</div>
-            <div><i class="ic-strategy"></i> Chơi game</div>
-            <div><i class="ic-basket"></i> Nấu ăn</div>
+          <div class="grid-item-title">
+            <h1>Sở thích</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
           </div>
+          <i class="ic-telescope job-info-icon"></i>
+          <ul class="hobby-items show-item hidden">
+            <li><i class="ic-megaphone"></i> Âm nhạc</li>
+            <li><i class="ic-hotairballoon"></i> Du lịch</li>
+            <li><i class="ic-strategy"></i> Chơi game</li>
+            <li><i class="ic-basket"></i> Nấu ăn</li>
+            <div class="viewLess"><p>View less</p></div>
+          </ul>
         </div>
         <div style="margin-top: 20px" class="grid-item languages">
-          <h1>Ngôn ngữ</h1>
+          <div class="grid-item-title">
+            <h1>Ngôn ngữ</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
+          </div>
           <i class="ic-mic job-info-icon"></i>
-          <ul class="whitespace-li skill-bars">
+          <ul class="whitespace-li skill-bars show-item hidden">
             <!-- tạo các level bars -->
             <li class="language-1">
               <p>English - IELTS 7.0</p>
@@ -193,12 +224,16 @@
               <span class="level-bar unreached-level"></span>
               <span class="level-bar unreached-level"></span>
             </li>
+            <div class="viewLess"><p>View less</p></div>
           </ul>
         </div>
         <div style="margin-top: 20px" class="grid-item skills">
-          <h1>Kỹ năng</h1>
+          <div class="grid-item-title">
+            <h1>Kỹ năng</h1>
+            <div class="viewMore hidden"><p>View more</p></div>
+          </div>
           <i class="ic-tools-2 job-info-icon"></i>
-          <ul class="whitespace-li skill-bars">
+          <ul class="whitespace-li skill-bars show-item hidden">
             <li class="skill-1">
               <p>HTML/CSS: Fundamental</p>
               <span class="level-bar"></span>
@@ -229,6 +264,7 @@
               <span class="level-bar unreached-level"></span>
               <span class="level-bar unreached-level"></span>
             </li>
+            <div class="viewLess"><p>View less</p></div>
           </ul>
         </div>
       </div>
@@ -406,5 +442,6 @@
         </ul>
       </div>
     </section>
+    <script src="./script/scrip.js"></script>
   </body>
 </html>
