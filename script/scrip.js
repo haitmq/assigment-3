@@ -50,9 +50,6 @@ const hideElement = function (ele) {
 for (let i = 0; i < viewMore.length; i++) {
   // console.log(gridTitle[i]);
   let holdValue = true;
-  function hoverToShow() {
-    viewMore[i].classList.remove('hidden');
-  }
   gridTitle[i].addEventListener('mouseover', function () {
     if (infoUl[i].classList.contains('hidden')) {
       viewMore[i].classList.remove('hidden');
@@ -69,6 +66,7 @@ for (let i = 0; i < viewMore.length; i++) {
   });
   viewMore[i].addEventListener('click', function () {
     infoUl[i].classList.remove('hidden');
+    viewMore[i].classList.add('hidden');
     holdValue = false;
   });
   viewLess[i].addEventListener('click', function () {

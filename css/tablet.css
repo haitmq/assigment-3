@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
   p,
   div,
   ul,
@@ -14,7 +14,11 @@
   section > .container {
     padding: 20px 40px;
   }
-
+  /* intro */
+  .intro {
+    height: 250px;
+  }
+  /* Nav
   /* navbar */
   .name,
   .avatar {
