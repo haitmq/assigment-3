@@ -35,6 +35,7 @@
     padding: 10px 16px;
   }
 
+  /* about */
   #about .container {
     display: block;
   }
@@ -45,6 +46,7 @@
   #about .container div h1 {
     margin: 15px auto;
     text-align: center;
+    font-size: 1.4rem;
   }
   #personal-info {
     background: linear-gradient(180deg, #dbdada, #f7f7f7);
@@ -72,6 +74,7 @@
   .flexbox {
     flex-direction: column;
   }
+
   .flexbox h4 {
     white-space: wrap;
   }

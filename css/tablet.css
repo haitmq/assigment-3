@@ -34,7 +34,7 @@
   }
   /* about */
   #about .container > div {
-    padding: 25px;
+    padding: 40px;
   }
   #about .container div h1 {
     margin: 20px auto;
@@ -52,9 +52,6 @@
     flex-direction: column;
   }
 
-  .flexbox img {
-    padding: 0 1rem;
-  }
   .flexbox h4 {
     white-space: wrap;
   }
