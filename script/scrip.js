@@ -31,17 +31,56 @@ let infoUl = document.querySelectorAll('.show-item');
 let viewMore = document.querySelectorAll('.viewMore');
 let viewLess = document.querySelectorAll('.viewLess');
 let gridTitle = document.querySelectorAll('.grid-item h1');
+console.log('gridtitle', gridTitle.length);
+console.log('viewmore', viewMore.length);
+console.log('viewless', viewLess.length);
+console.log('infoul', infoUl.length);
 
-const showElement = function (ele) {
+function showElement(ele) {
   ele.classList.remove('hidden');
-};
+}
 
 const hideElement = function (ele) {
   ele.classList.add('hidden');
 };
+//
+
+//
 
 for (let i = 0; i < viewMore.length; i++) {
+  // console.log(gridTitle[i]);
+  let holdValue = true;
+  function hoverToShow() {
+    viewMore[i].classList.remove('hidden');
+  }
+  gridTitle[i].addEventListener('mouseover', function () {
+    if (infoUl[i].classList.contains('hidden')) {
+      viewMore[i].classList.remove('hidden');
+    }
+  });
+  gridTitle[i].addEventListener('mouseout', function () {
+    viewMore[i].classList.add('hidden');
+  });
+  viewMore[i].addEventListener('mouseover', function () {
+    viewMore[i].classList.remove('hidden');
+  });
+  viewMore[i].addEventListener('mouseout', function () {
+    viewMore[i].classList.add('hidden');
+  });
   viewMore[i].addEventListener('click', function () {
     infoUl[i].classList.remove('hidden');
+    holdValue = false;
+  });
+  viewLess[i].addEventListener('click', function () {
+    infoUl[i].classList.add('hidden');
+    holdValue = true;
   });
 }
+
+// for (let i = 0; i < viewMore.length; i++) {
+//   if (!infoUl[i].classList.contains('hidden')) {
+//     gridTitle[i].removeEventListener('mouseover', function () {
+//       viewMore[i].classList.remove('hidden');
+//     });
+//   }
+// }
