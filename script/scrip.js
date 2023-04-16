@@ -36,49 +36,44 @@ console.log('viewmore', viewMore.length);
 console.log('viewless', viewLess.length);
 console.log('infoul', infoUl.length);
 
-function showElement(ele) {
-  ele.classList.remove('hidden');
+function showElement(obj) {
+  obj.classList.remove('hidden');
 }
 
-const hideElement = function (ele) {
-  ele.classList.add('hidden');
+const hideElement = function (obj) {
+  obj.classList.add('hidden');
 };
 //
 
 //
-
+// lặp qua từ grid item và thêm sự kiện
 for (let i = 0; i < viewMore.length; i++) {
   // console.log(gridTitle[i]);
-  let holdValue = true;
+  // Hiển thị viewMore khi di chuột qua
   gridTitle[i].addEventListener('mouseover', function () {
+    // chỉ show View More nếu không có info của item
     if (infoUl[i].classList.contains('hidden')) {
-      viewMore[i].classList.remove('hidden');
+      showElement(viewMore[i]);
     }
   });
-  gridTitle[i].addEventListener('mouseout', function () {
-    viewMore[i].classList.add('hidden');
-  });
   viewMore[i].addEventListener('mouseover', function () {
-    viewMore[i].classList.remove('hidden');
+    showElement(viewMore[i]);
+  });
+  // Ẩn view More khi di chuột ra khỏi
+  gridTitle[i].addEventListener('mouseout', function () {
+    hideElement(viewMore[i]);
   });
   viewMore[i].addEventListener('mouseout', function () {
-    viewMore[i].classList.add('hidden');
+    hideElement(viewMore[i]);
   });
+
+  // Hiển thị info khi click vào View more đồng thời ẩn view more đi
   viewMore[i].addEventListener('click', function () {
-    infoUl[i].classList.remove('hidden');
-    viewMore[i].classList.add('hidden');
-    holdValue = false;
+    showElement(infoUl[i]);
+    hideElement(viewMore[i]);
   });
+  // Ẩn đi khi clck vào view Less
   viewLess[i].addEventListener('click', function () {
-    infoUl[i].classList.add('hidden');
-    holdValue = true;
+    hideElement(infoUl[i]);
   });
 }
-
-// for (let i = 0; i < viewMore.length; i++) {
-//   if (!infoUl[i].classList.contains('hidden')) {
-//     gridTitle[i].removeEventListener('mouseover', function () {
-//       viewMore[i].classList.remove('hidden');
-//     });
-//   }
-// }

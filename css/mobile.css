@@ -13,6 +13,7 @@
 
   /* container */
   section > .container {
+    padding: 30px;
   }
 
   /* intro background */
@@ -32,7 +33,12 @@
     display: block;
     width: 100%;
     text-align: left;
-    padding: 10px 16px;
+    padding: 10px 20px;
+  }
+
+  #banner h1 {
+    font-size: 20px;
+    padding-bottom: 0;
   }
 
   /* about */
@@ -75,6 +81,10 @@
     flex-direction: column;
   }
 
+  .flexbox > img {
+    margin: 0;
+  }
+
   .flexbox h4 {
     white-space: wrap;
   }
@@ -107,5 +117,12 @@
   }
   .contact-list i {
     font-size: 3rem;
+  }
+  /* footer */
+  .contact-icon-name {
+    display: none;
+  }
+  .contact-list > li {
+    padding: 10px;
   }
 }

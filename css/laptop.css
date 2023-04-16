@@ -19,7 +19,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
   line-height: 1.7rem;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 a:link {
@@ -81,9 +81,9 @@ section > .container {
   color: #ddd;
   text-align: center;
   position: absolute;
-  top: 50px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 #banner h1,
@@ -384,11 +384,16 @@ section > .container {
   height: auto;
 }
 
-.project-name {
+.project-name > a {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   padding: 15px;
+  display: block;
+}
+
+.project-name > a:hover {
+  color: #219fdc;
 }
 
 .project-scope {
@@ -416,7 +421,7 @@ section > .container {
 }
 
 .project-tb tr > td {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .project-tb tr > td:first-child {
@@ -437,15 +442,21 @@ section > .container {
 }
 
 .contact-list a {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contact-list i {
-  font-size: 3rem;
+  font-size: 300%;
   vertical-align: middle;
 }
 
-/* phan nâng cao  */
+.contact-icon-name {
+  font-size: 150%;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+/* tao avatar */
 
 #nav-bar .container {
   position: relative;
@@ -467,7 +478,7 @@ section > .container {
 .hidden {
   display: none;
 }
-/* style form */
+/* style form nhap email */
 .form-model1 > * {
   display: block;
   margin-bottom: 5px;
@@ -540,8 +551,7 @@ section > .container {
 
 .viewLess,
 .viewMore {
-  /* grid-column: 1 / span 2; */
-  padding: 5px 50px;
+  padding: 5px 40px;
   border-radius: 20px 20px 20px 20px;
   border: 2px solid #ccc;
   position: absolute;
@@ -557,12 +567,12 @@ section > .container {
 }
 
 .viewMore {
-  background: linear-gradient(0, #82c3e4, #fff);
+  background: linear-gradient(0, #f5f6ba, #fff);
   top: 70px;
 }
 
 .viewLess {
-  background: linear-gradient(180deg, #82c3e4, #fff);
+  background: linear-gradient(180deg, #f5f6ba, #fff);
   bottom: 5px;
 }
 
