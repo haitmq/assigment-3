@@ -28,6 +28,7 @@ a:link {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .icon-color-edit {
@@ -202,8 +203,16 @@ nav.navbar {
   font-weight: bold;
 }
 
+.show-item h3 {
+  line-height: 2.4rem;
+}
+
 .grid-item > .show-item {
   grid-column: 1 / span 2;
+}
+
+.wrap-fix {
+  white-space: nowrap;
 }
 
 /* chỉnh size của icon */
@@ -337,15 +346,11 @@ nav.navbar {
   margin-bottom: 10px;
 }
 
-.imgHeight {
-  height: 100px;
-}
-
 .certi-grid-item h4 {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* project */
