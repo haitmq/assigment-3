@@ -299,7 +299,7 @@ nav.navbar {
 /* certificate */
 /* fix margin-bottom của title */
 .mb-title-fix {
-  margin-bottom: 20px;
+  padding-top: 40px;
 }
 /* fix lại width của container */
 #certificate > .container {
@@ -335,6 +335,7 @@ nav.navbar {
 .certi-grid-item img {
   width: 190px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .imgHeight {
@@ -375,7 +376,7 @@ nav.navbar {
 
 .project-name > a {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: calc(1.2rem + 0.1vw);
   font-weight: bold;
   padding: 15px;
   display: block;
