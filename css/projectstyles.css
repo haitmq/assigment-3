@@ -80,6 +80,10 @@ h3 {
   /* padding: 15px; */
 }
 
+.goal-container {
+  padding: 10px 0;
+}
+
 /* Goal styling */
 .goal-container > i {
   padding: 0 40px;
