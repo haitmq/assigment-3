@@ -116,6 +116,7 @@
   .certi-grid-item:not(:last-child) {
     border-bottom: 2px solid #d6c08d !important;
   }
+
   .project-grid {
     /* tạo grid */
     display: grid;
