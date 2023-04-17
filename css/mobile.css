@@ -1,4 +1,4 @@
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
   p,
   div,
   ul,
@@ -20,35 +20,47 @@
   .intro {
     height: 200px;
   }
-  /* Navbar */
-  .name,
-  .avatar {
-    display: none;
-  }
+
+  /* navbar */
   #nav-bar .container {
-    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .nav-link {
+    border: none;
+  }
+
+  .navbar-nav.fix-width {
     width: 100%;
   }
-  #nav-bar .container > a {
-    display: block;
+
+  #nav-bar .container a {
+    /* display: block; */
     width: 100%;
     text-align: left;
     padding: 10px 20px;
   }
 
-  #banner h1 {
-    font-size: 20px;
-    padding-bottom: 0;
+  #nav-bar .container li,
+  #nav-bar .container li:last-child {
+    border: none;
   }
 
   /* about */
+
+  .width-fix {
+    max-width: 100%;
+  }
+
+  .width-fix > div {
+    padding: 80px !important;
+  }
+
   #about .container {
     display: block;
   }
 
-  #about .container > div {
-    padding: 40px;
-  }
   #about .container div h1 {
     margin: 15px auto;
     text-align: center;

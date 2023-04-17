@@ -40,13 +40,13 @@ ul {
   background: #f7f7f7;
 }
 
-section > .container {
+/* section > .container {
   max-width: 1170px;
   width: 100%;
   margin: auto;
   display: block;
   padding: 30px 50px;
-}
+} */
 
 /* CSS */
 /* section-title */
@@ -54,6 +54,7 @@ section > .container {
 .section-title {
   text-transform: uppercase;
   margin: 40px 0;
+  font-weight: bold;
 }
 
 /* banner */
@@ -98,47 +99,29 @@ section > .container {
 
 /* navbar */
 
-#nav-bar .container {
-  /* overflow: hidden; */
+nav.navbar {
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 #nav-bar .container a {
-  display: inline-block;
   width: 150px;
   text-align: center;
   color: #333;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#nav-bar .container li {
   border-left: 1px solid #aaa;
 }
 
-#nav-bar a + a {
+#nav-bar .container li:last-child {
   border-right: 1px solid #aaa;
 }
 
 #nav-bar .container a:hover {
   background-color: #333;
   color: #ddd;
-}
-
-.name {
-  width: 250px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.name h3 {
-  padding-bottom: 5px;
-}
-
-.name p {
-  font-size: 12px;
-  color: #aaa;
 }
 
 /* about */
@@ -156,7 +139,7 @@ section > .container {
 
 /* căn chỉnh target */
 #target {
-  padding: 70px 40px 70px 150px;
+  padding: 70px 40px 70px 15%;
 }
 
 #target p {
@@ -166,7 +149,7 @@ section > .container {
 /* căn chỉnh và đặt màu nền personal-info */
 #personal-info {
   background: linear-gradient(90deg, #dedede, #f7f7f7);
-  padding: 70px 150px 70px 40px;
+  padding: 70px 15% 70px 40px;
 }
 
 .contact-icon > li {
@@ -212,6 +195,12 @@ section > .container {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto 1fr;
   row-gap: 20px;
+}
+
+.grid-item-title > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .grid-item > .show-item {
@@ -458,11 +447,11 @@ section > .container {
 
 /* tao avatar */
 
-#nav-bar .container {
-  position: relative;
+.avatar-block {
+  width: 200px;
 }
 
-#nav-bar .container .avatar {
+#nav-bar .avatar {
   width: 150px;
   height: 150px;
   border: 10px solid #fff;
@@ -527,9 +516,10 @@ section > .container {
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
+  white-space: nowrap;
   position: absolute;
-  right: 0;
   top: 40px;
+  left: 180px;
 }
 .emailExample::before {
   content: '\25B2';
@@ -580,6 +570,7 @@ section > .container {
 .viewMore p {
   text-align: center;
   position: relative;
+  margin: 0;
 }
 
 .viewLess::before {

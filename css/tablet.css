@@ -1,4 +1,4 @@
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   p,
   div,
   ul,
@@ -18,24 +18,13 @@
   .intro {
     height: 250px;
   }
-  /* Nav
-  /* navbar */
-  .name,
-  .avatar {
-    display: none;
-  }
 
-  #nav-bar .container a {
-    width: 20%;
-  }
-
-  #nav-bar .container > a:nth-of-type(2) {
-    border-right: none;
-  }
   /* about */
-  #about .container > div {
-    padding: 40px;
+
+  .width-fix > div {
+    padding: 10% !important;
   }
+
   #about .container div h1 {
     margin: 20px auto;
     text-align: center;
