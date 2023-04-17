@@ -35,6 +35,10 @@
     width: 100%;
   }
 
+  .fix-width > div {
+    padding: 0 20px;
+  }
+
   #nav-bar .container a {
     /* display: block; */
     width: 100%;
@@ -51,10 +55,6 @@
 
   .width-fix {
     max-width: 100%;
-  }
-
-  .width-fix > div {
-    padding: 80px !important;
   }
 
   #about .container {
@@ -85,6 +85,11 @@
     column-gap: 20px;
     row-gap: 10px;
   }
+
+  .grid-item-title > h1 {
+    font-size: 1.4rem;
+  }
+
   .certificate-grid {
     display: grid;
     grid-template-columns: 1fr;

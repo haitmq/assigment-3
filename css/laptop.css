@@ -200,7 +200,6 @@ nav.navbar {
 .grid-item-title > h1 {
   font-size: 2rem;
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .grid-item > .show-item {
@@ -302,10 +301,10 @@ nav.navbar {
   padding-top: 40px;
 }
 /* fix lại width của container */
-#certificate > .container {
+/* #certificate > .container {
   max-width: 1200px;
   width: 100%;
-}
+} */
 
 .certificate-grid {
   display: grid;
@@ -346,6 +345,7 @@ nav.navbar {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 /* project */
@@ -520,7 +520,7 @@ nav.navbar {
   white-space: nowrap;
   position: absolute;
   top: 40px;
-  left: 180px;
+  left: 170px;
 }
 .emailExample::before {
   content: '\25B2';
